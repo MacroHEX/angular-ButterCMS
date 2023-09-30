@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-content>
+
+  <div class="section-cols">
+
+    <section class="section-col-main">
+
+      <!-- CHANGE IT! -->
+      <app-example-list #list
+                        (action)="onListAction($event)">
+      </app-example-list>
+
+    </section>
+
+  </div>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-actions [align]="'end'">
+  <button mat-flat-button [color]="'primary'" (click)="closeDialog()">Cerrar</button>
+</div>

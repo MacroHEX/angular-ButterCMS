@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-content>
+
+  <div class="section-cols">
+
+    <form [formGroup]="mainForm" class="section-col-main">
+
+      <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput formControlName="idCtrl" [readonly]="readOnly">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nameCtrl" [readonly]="readOnly">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <textarea rows="3" matInput formControlName="descCtrl" [readonly]="readOnly"></textarea>
+      </mat-form-field>
+    </form>
+
+  </div>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-actions [align]="'end'">
+  <button mat-flat-button (click)="closeDialog()">Cancelar</button>
+  <button mat-flat-button [color]="'primary'" (click)="performDialog()">Aceptar</button>
+</div>

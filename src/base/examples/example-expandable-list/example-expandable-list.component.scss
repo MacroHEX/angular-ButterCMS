@@ -1,0 +1,14 @@
+@import "../../components/styles/base-component-list";
+
+.mat-column-rowExpandedToggler {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 50px;
+  max-width: 50px;
+}
+
+.list-row-expanded-toolbar {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+}

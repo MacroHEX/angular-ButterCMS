@@ -1,0 +1,16 @@
+<div class="frame-content-layout">
+
+  <div class="frame-content-menu">
+    <ng-template [cdkPortalOutlet]="menuPortal"></ng-template>
+  </div>
+  <div class="frame-content-panel">
+    <ng-template [cdkPortalOutlet]="panelPortal"></ng-template>
+  </div>
+  <div class="frame-content-context">
+    <ng-template [cdkPortalOutlet]="contextPortal"></ng-template>
+  </div>
+  <div class="frame-content-footer">
+    <ng-template [cdkPortalOutlet]="footerPortal"></ng-template>
+  </div>
+
+</div>

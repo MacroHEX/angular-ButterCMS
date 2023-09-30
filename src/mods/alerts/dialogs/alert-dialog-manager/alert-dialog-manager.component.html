@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-content>
+
+    <div class="section-cols">
+
+        {{ msg }}
+
+    </div>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div mat-dialog-actions [align]="'end'">
+    <button mat-flat-button (click)="closeDialog('no')">No</button>
+    <button mat-flat-button [color]="'primary'" (click)="closeDialog('yes')">Sí</button>
+</div>

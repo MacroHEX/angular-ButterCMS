@@ -1,0 +1,164 @@
+@import "base-component";
+
+/* Table Root Container */
+.list-root {
+}
+
+/* Base Table */
+.mat-table {
+  width: 95%;
+}
+
+/* Base Row */
+tr.list-row {
+}
+
+tr.list-row:hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+/* Expanded Row */
+tr.list-row-expanded {
+  height: 0 !important;
+}
+
+tr.list-row:not(.list-row-expanded):hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+/* ::: GARBAGE ::: */
+
+/*background-color: white;*/
+/*border-radius: 10px;*/
+/*
+margin: 5px;
+padding: 0px;*/
+
+/*.component-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+*/
+/*
+.mat-paginator {
+  background-color: transparent;
+}*/
+
+/*
+.list-toolbar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: baseline;
+}*/
+
+/*
+.list-title {
+  font-size: 18pt;
+  font-weight: 1.5;
+}*/
+
+/* table */
+/*
+.list-list-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0px solid #a1a1a1;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}*/
+
+
+/* columns */
+/*
+.mat-column-actions {
+  width: fit-content;
+  margin: 0;
+}
+
+.mat-column-actions * {
+  vertical-align: middle;
+}
+
+.mat-column-type {
+  width: fit-content;
+  padding-left: 5px;
+}
+
+.mat-column-title {
+
+  flex: 1;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+}
+
+.mat-column-time {
+  width: fit-content;
+  margin-left: 5px;
+}*/
+
+/* rows */
+/*
+.mat-row {
+}*/
+
+
+
+/*
+.list-cell-actions {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.list-cell-time {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+*/
+
+/* Expanded Row */
+
+
+/*
+.list-detail-panel {
+  overflow: hidden;
+  display: flex;
+}*/
+
+/*
+.list-detail-panel {
+  overflow: hidden;
+  display: flex;
+}*/
+
+/*
+.list-detail-box {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}*/
+/*
+.list-detail-header {
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+}*/
+
+/*
+.list-detail-actions {
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+}*/
+
+/*
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+ */
