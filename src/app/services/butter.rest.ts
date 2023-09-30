@@ -1,5 +1,5 @@
-import {ButterCaller} from "../../base/caller/butter";
 import {ButterStatic} from "buttercms";
+import {ButterCaller} from "../../base/rest/butter";
 
 // ::: Butter
 //
@@ -31,10 +31,7 @@ export class ButterPosts {
   // ::: List All POSTS
   //
   list(page?: number, pageSize?: number): ButterCaller {
-    let params = {
-      page: page || 1,
-      page_size: pageSize || 10,
-    }
+    let params = getDefaultPaginationParams(page, pageSize);
 
     let caller = () => this.butter.post.list(params);
     return new ButterCaller(caller);
@@ -50,10 +47,7 @@ export class ButterPosts {
   // ::: Search POSTS
   //
   search(query?: any, page?: number, pageSize?: number) {
-    let params = {
-      page: page || 1,
-      page_size: pageSize || 10,
-    }
+    let params = getDefaultPaginationParams(page, pageSize);
     let caller = () => this.butter.post.search(query, params);
     return new ButterCaller(caller);
   }
@@ -74,10 +68,7 @@ export class ButterPages {
     let arg = {
       pageType: pageType || '*',
     };
-    let params = {
-      page: page || 1,
-      page_size: pageSize || 10,
-    }
+    let params = getDefaultPaginationParams(page, pageSize);
 
     let caller = () => this.butter.page.list(arg.pageType, params);
     return new ButterCaller(caller);
@@ -85,7 +76,7 @@ export class ButterPages {
 
   // ::: Get Page by Slug
   //
-  get(pageType?: any, pageSlug?: any, params?: any): ButterCaller {
+  get(pageSlug?: any, pageType?: any, params?: any): ButterCaller {
     let arg = {
       pageType: pageType || '*',
     }
@@ -97,12 +88,18 @@ export class ButterPages {
   // ::: Search Pages
   //
   search(query?: any, page?: number, pageSize?: number): ButterCaller {
-    let params = {
-      page: page || 1,
-      page_size: pageSize || 10,
-    }
+    let params = getDefaultPaginationParams(page, pageSize);
 
     let caller = () => this.butter.page.search(query, params);
     return new ButterCaller(caller);
   }
+}
+
+// ::: Methods
+//
+function getDefaultPaginationParams(page?: number, pageSize?: number) {
+  return {
+    page: page || 1,
+    page_size: pageSize || 10
+  };
 }

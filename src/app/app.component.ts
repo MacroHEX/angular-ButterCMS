@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {BaseAppFrame} from "../base/frames/base-app.frame";
 import {AppService} from "./services/app.service";
-import {TestMainFrameComponent} from "../mods/ztest/frames/test-main-frame/test-main-frame.component";
+import {PubMainFrameComponent} from "./pub/frames/pub-main-frame/pub-main-frame.component";
 
 @Component({
   selector: 'app-root',
@@ -27,10 +27,7 @@ export class AppComponent extends BaseAppFrame {
   // ::: init
   //
   initFramePortals() {
-    //this.loadMain(PublicMainFrameComponent);
-    this.loadMain(TestMainFrameComponent);
+    this.loadMain(PubMainFrameComponent);
   }
-
-
 
 }

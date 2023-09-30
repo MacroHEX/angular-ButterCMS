@@ -50,7 +50,7 @@ export class TestContentPanelComponent {
   }
 
   alertUUID() {
-    this.appService.butter().pages().search('simple')
+    this.appService.butter().pages().search('frame')
       .onSuccess(msg => {
         console.log(msg.data)
       })

@@ -1,0 +1,36 @@
+.footer {
+  background-color: #607d8b; /* blue-grey from the theme */
+  color: #ffffff; /* white text for contrast */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 16px; /* some padding on the sides and top/bottom */
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* allow the content to wrap on smaller screens */
+}
+
+.footer a {
+  color: #e91e63; /* pink accent from the theme */
+  text-decoration: underline;
+  margin-left: 5px; /* spacing between text and link */
+}
+
+.footer a:hover {
+  color: #c2185b; /* slightly darker pink for hover */
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* stack the content vertically */
+    align-items: center; /* center align the content */
+    text-align: center;
+  }
+}

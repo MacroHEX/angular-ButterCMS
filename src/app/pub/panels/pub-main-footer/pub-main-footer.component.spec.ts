@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrivMainFrameComponent } from './priv-main-frame.component';
+import { PubMainFooterComponent } from './pub-main-footer.component';
 
-describe('PrivMainFrameComponent', () => {
-  let component: PrivMainFrameComponent;
-  let fixture: ComponentFixture<PrivMainFrameComponent>;
+describe('PubMainFooterComponent', () => {
+  let component: PubMainFooterComponent;
+  let fixture: ComponentFixture<PubMainFooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PrivMainFrameComponent ]
+      declarations: [ PubMainFooterComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PrivMainFrameComponent);
+    fixture = TestBed.createComponent(PubMainFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

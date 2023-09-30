@@ -26,7 +26,10 @@ import {ZtestModule} from "../mods/ztest/ztest.module";
 //
 import {AppComponent} from './app.component';
 import {PubMainFrameComponent} from './pub/frames/pub-main-frame/pub-main-frame.component';
-import {PrivMainFrameComponent} from './priv/frames/priv-main-frame/priv-main-frame.component';
+import {HomeModule} from "../mods/home/home.module";
+import {PubMainHeaderComponent} from './pub/panels/pub-main-header/pub-main-header.component';
+import {PubMainFooterComponent} from './pub/panels/pub-main-footer/pub-main-footer.component';
+import {FramesModule} from "../mods/frames/frames.module";
 
 /*
 function initializeKeycloak(keycloak: KeycloakService) {
@@ -48,14 +51,17 @@ function initializeKeycloak(keycloak: KeycloakService) {
 @NgModule({
   declarations: [
     AppComponent,
-    PrivMainFrameComponent,
-    PubMainFrameComponent
+    PubMainFrameComponent,
+    PubMainHeaderComponent,
+    PubMainFooterComponent
   ],
   imports: [
 
     // mods
     ZtestModule,
     AlertsModule,
+    HomeModule,
+    FramesModule,
 
     // base
     BaseModule,

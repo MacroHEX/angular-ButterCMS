@@ -1,0 +1,22 @@
+@import "../../../../base/panels/styles/base-panel-header";
+
+/* By default, hide the mobile menu button */
+.mobile-menu-button {
+  display: none;
+}
+
+/* On smaller screens, hide desktop menu buttons and show mobile menu button */
+@media (max-width: 768px) {
+  .desktop-menu-buttons {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: inline-block;
+  }
+
+  .title {
+    flex: 1;
+    text-align: center;
+  }
+}
