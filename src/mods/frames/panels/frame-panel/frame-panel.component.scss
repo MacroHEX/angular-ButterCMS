@@ -1,1 +1,17 @@
 @import "../../../../base/panels/styles/base-panel";
+
+pre {
+  margin: 20px 0;
+  padding: 10px;
+  max-width: 100%;
+  overflow-x: auto;
+
+  @media only screen and (max-width: 600px) {
+    padding: 5px;
+  }
+
+  code {
+    white-space: pre-wrap; // Allows the code to wrap to the next line
+    word-wrap: break-word; // Breaks long words to fit content
+  }
+}
