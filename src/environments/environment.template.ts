@@ -1,3 +1,3 @@
 export const environment = {
-  butterApiKey: 'YOUR_API_KEY',
+  butter_api_key: 'YOUR_API_KEY',
 };

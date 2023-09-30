@@ -28,7 +28,7 @@ export class AppService implements /*BaseAppService,*/ FrameManagerFactory,
   // ::: vars
   //
   rootApp!: AppComponent;
-  butterInstance = Butter(environment.butterApiKey);
+  butterInstance = Butter(environment.butter_api_key);
   //sessionManager: any;
 
   // ::: constructor
